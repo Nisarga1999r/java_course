@@ -1,0 +1,7 @@
+
+public class Author {
+	 String authorname;
+     int age;
+     String place;
+	public Book book;
+}
