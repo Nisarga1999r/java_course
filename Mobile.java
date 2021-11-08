@@ -1,45 +1,13 @@
-package com.java.Encapsulation;
+package com.java.Clone1;
 
-public class Mobile {
-private String brand;
-private double price;
-private int ramSize;
-private String camera;
 
-public Mobile() {
-	
-}
 
-public String getBrand() {
-	return brand;
-}
 
-public void setBrand(String brand) {
-	this.brand = brand;
-}
-
-public double getPrice() {
-	return price;
-}
-
-public void setPrice(double price) {
-	this.price = price;
-}
-
-public int getRamSize() {
-	return ramSize;
-}
-
-public void setRamSize(int ramSize) {
-	this.ramSize = ramSize;
-}
-
-public String getCamera() {
-	return camera;
-}
-
-public void setCamera(String camera) {
-	this.camera = camera;
-}
-
+public class Mobile implements Cloneable{
+	String brand="sony";
+	Sim sim=new Sim();
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+		
+	}
 }
